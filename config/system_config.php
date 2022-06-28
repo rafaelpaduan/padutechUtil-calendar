@@ -7,8 +7,8 @@ return [
         'logo_text' => '&nbsp; padu<b>tech</b>Adm',
         'logo_img' => 'images/padutech/padutech_pc.png',
 
-        'body_class' => 'sidebar-mini sidebar-collapse',
-        'sidebar_class' => 'sidebar-light-primary main-sidebar elevation-4',
+        'body_class' => 'sidebar-mini sidebar-collapse text-sm',
+        'sidebar_class' => 'sidebar-light-primary main-sidebar elevation-4 sidebar-light-navy',
 
         'notfound_img' => '/custom/not_found.svg'
     ],

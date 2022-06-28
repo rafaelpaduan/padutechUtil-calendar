@@ -53,7 +53,7 @@
   <!-- /.control-sidebar -->
 
   <!-- Main Footer -->
-  @include('layouts.admin-parts.admin-footer')
+  {{-- @include('layouts.admin-parts.admin-footer') --}}
   <!-- /.Main Footer -->
   
 </div>

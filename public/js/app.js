@@ -20355,10 +20355,33 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       calendarOptions: {
+        height: 'auto',
         plugins: [_fullcalendar_daygrid__WEBPACK_IMPORTED_MODULE_2__["default"], _fullcalendar_interaction__WEBPACK_IMPORTED_MODULE_3__["default"]],
-        initialView: 'dayGridMonth'
+        initialView: 'dayGridMonth',
+        dateClick: this.handleDateClick,
+        events: [{
+          title: 'event 1',
+          date: '2022-06-01'
+        }, {
+          title: 'event 2',
+          date: '2022-06-01'
+        }, {
+          title: 'event 3',
+          date: '2022-06-02'
+        }]
       }
     };
+  },
+  methods: {
+    handleDateClick: function handleDateClick(arg) {
+      alert('date click! ' + arg.dateStr);
+    },
+    newEvent: function newEvent() {
+      this.calendarOptions.events.push({
+        title: 'Novo Evento',
+        date: '2022-06-' + Math.floor(Math.random() * 31)
+      });
+    }
   }
 });
 
